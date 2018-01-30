@@ -21,6 +21,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use Bulma css framework
 gem 'bulma-rails', '~> 0.6.2'
+# Use bcrypt for users password
+gem 'bcrypt', '3.1.11'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
