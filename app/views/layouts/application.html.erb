@@ -17,7 +17,7 @@
         <main>
             <div class="container">
                 <% flash.each do |message_type, message| %>
-                    <span class="tag is-small is-<%= message_type %>"><%= message %></span>
+                    <%= content_tag(:div, message, class: "alert is-#{message_type}") %>
                 <% end %>
                 <%= yield %>
             </div>
