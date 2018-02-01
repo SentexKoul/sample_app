@@ -50,9 +50,55 @@ header .navbar {
 
 
 main {
-	margin: 5rem 0;
+	margin: 2.5rem 0;
 }
 
+aside {
+	.user-info {
+		margin-top: 1.25rem;
+	}
+
+	section {
+		padding: .8rem 0;
+		margin-top: 1.3rem;
+
+		span {
+			display: block;
+			margin-bottom: .8rem;
+			line-height: 1;
+		}
+
+		h1 {
+			font-size: 1.3rem;
+			letter-spacing: -1px;
+			margin-bottom: .2rem;
+		}
+	}
+}
+
+.gravatar {
+	float: left;
+	margin-right: .6rem;
+}
+
+.gravatar-edit {
+	margin-top: 1rem;
+}
+
+#error_explanation {
+	.alert {
+		padding: .4rem .2rem;
+		margin-bottom: .5rem;
+		background-color: red;
+		color: #fff;
+	}
+
+	ul {
+		margin-bottom: 1.7rem;
+		color: red;
+		padding-left: .2rem;
+	}
+}
 
 footer {
 	margin-top: 2.5rem;
@@ -72,4 +118,10 @@ footer {
 		display: inline-block;
 		margin: 0 .3rem;
 	}
+}
+
+.debug_dump {
+	width: 80%;
+	margin: 2.8rem auto;
+	box-sizing: border-box;
 }

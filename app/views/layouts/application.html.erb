@@ -16,11 +16,15 @@
         <!-- MAIN -->
         <main>
             <div class="container">
+                <% flash.each do |message_type, message| %>
+                    <span class="tag is-small is-<%= message_type %>"><%= message %></span>
+                <% end %>
                 <%= yield %>
             </div>
         </main>
         
         <!-- FOOTER -->
         <%= render 'layouts/footer' %>
+        <%= debug(params) if Rails.env.development? %>
     </body>
 </html>
